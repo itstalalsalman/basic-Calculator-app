@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/*--Root color initialization--*/
+:root{
+
+    /* ### Theme 1 */
+
+   /*Backgrounds*/
+
+    --Very_dark_desaturated_blue_main_background: hsl(222, 26%, 31%);
+    --Very_dark_desaturated_blue_toggle_background_keypad_background: hsl(223, 31%, 20%);
+    --Very_dark_desaturated_blue_screen_background: hsl(224, 36%, 15%);
+
+    /* #### Keys */
+
+    --Desaturated_dark_blue_key_background: hsl(225, 21%, 49%);
+    --Desaturated_dark_blue_key_shadow: hsl(224, 28%, 35%);
+
+    --Red_key_background_toggle: hsl(6, 63%, 50%);
+    --Dark_red_key_shadow: hsl(6, 70%, 34%);
+
+    --Light_grayish_orange_key_background: hsl(30, 25%, 89%);
+    --Grayish_orange_key_shadow: hsl(28, 16%, 65%);
+
+    /* #### Text */
+
+    --Veryvdark_grayish_blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Theme 2 */
+
+    /*#### Backgrounds */
+
+    --Light_gray_main_background: hsl(0, 0%, 90%);
+    --Grayish_red_toggle_background_keypad_background: hsl(0, 5%, 81%);
+    --Very_light_gray_screen_background: hsl(0, 0%, 93%);
+
+    /* #### Keys */
+
+    --Dark_moderate_cyan_key_background: hsl(185, 42%, 37%);
+    --Very_dark_cyan_key_shadow: hsl(185, 58%, 25%);
+
+    --Orange_key_background_toggle: hsl(25, 98%, 40%);
+    --Dark_orange_key_shadow: hsl(25, 99%, 27%);
+
+    --Light_grayish_yellow_key_background: hsl(45, 7%, 89%);
+    --Dark_grayish_orange_key_shadow: hsl(35, 11%, 61%);
+
+    /* #### Text */
+
+    --Very_dark_grayish_yellow: hsl(60, 10%, 19%);
+    --White_text: hsl(0, 0%, 100%);
+
+    /* ### Theme 3*/ 
+
+    /* #### Backgrounds */
+
+    --Very_dark_violet_main_background: hsl(268, 75%, 9%);
+    --Very_dark_violet_toggle_background_keypad_background_screen_background: hsl(268, 71%, 12%);
+
+    /* #### Keys */
+
+    --Dark_violet_key_background: hsl(281, 89%, 26%);
+    --Vivid_magenta_key_shadow: hsl(285, 91%, 52%);
+
+    --Pure_cyan_key_background_toggle: hsl(176, 100%, 44%);
+    --Soft_cyan_key_shadow: hsl(177, 92%, 70%);
+
+    --Very_dark_violet_key_background: hsl(268, 47%, 21%);
+    --Dark_magenta_key_shadow: hsl(290, 70%, 36%);
+
+    /* #### Text */
+
+    --Light_yellow: hsl(52, 100%, 62%);
+    --Very_dark_blue: hsl(198, 20%, 13%);
+    --White_text: hsl(0, 0%, 100%);
+
+    /*--Font Family*/
+    --spartan:'League Spartan', sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex: 1 1 1;
+    align-items: center;
+    justify-content: center;  
+    background-color: var(--Very_dark_desaturated_blue_main_background);  
+}
+
+
+.center__container{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1;
+    gap: 3%;
+}
+
+.head__theme__select__tab{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex: 1 1 1;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: var(--spartan);
+}
+
+.calc__head{
+    font-size: 1.5rem;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 1;
+}
+
+.radio__group__select{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme__text{
+    width: 35%;
+    height: 100%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+}
+
+
+.radio__theme__selector
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+
+.nums__theme{
+    text-align: center;
+    word-spacing: 12px;
+    font-size: 0.9vw;
+}
+
+.toggle__switch{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--Very_dark_desaturated_blue_toggle_background_keypad_background);
+}
+
+.ball{
+    width: 22%;
+    height: 75%;
+    margin-left: 10%;
+    border-radius: 20px;
+    background-color: var(--Red_key_background_toggle);
+
+}
+
+
+.screen__display{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--Very_dark_desaturated_blue_screen_background);
+}
+
+.numbers__text__display{
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+    font-family: var(--spartan);
+    color: var(--White_text);
+    font-size: 3rem;
+}
+
+
+.button__grid__container{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18%;
+    grid-template-rows: 12% 12% 12% 12% 15%;
+    gap: 6%;
+    justify-content: center;
+    padding-top: 5%;
+    background-color: var(--Very_dark_desaturated_blue_toggle_background_keypad_background);
+    font-family: var(--spartan);
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.btn__numbers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+    border: none;
+    font-family: var(--spartan);
+    font-size: 2rem;
+    background-color: var(--Light_grayish_orange_key_background);
+    box-shadow: 0px 5px 5px var(--Grayish_orange_key_shadow);
+    color: var(--Veryvdark_grayish_blue);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    animation: slideFadeIn 0.5s ease-in; 
+}
+
+@keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn__numbers:hover::after {
+    transform: translateY(0);
+}
+
+
+
+.delete__btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+    color: var(--White);
+    background-color: var(--Desaturated_dark_blue_key_background);
+    box-shadow: 0px 5px 5px var(--Desaturated_dark_blue_key_shadow);
+    border-radius: 5px;
+    border: none;
+    font-family: var(--spartan);
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    animation: slideFromLeft 0.7s ease-in; 
+}
+
+.delete__btn:hover::after {
+    transform: translateY(0);
+}
+
+.operation__btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+    background-color: var(--Light_grayish_orange_key_background);
+    box-shadow: 0px 5px 5px var(--Grayish_orange_key_shadow);
+    color: var(--Veryvdark_grayish_blue);
+    border-radius: 5px;
+    border: none;
+    font-family: var(--spartan);
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    animation: slideFromLeft 0.7s ease-in; 
+}
+
+.operation__btn:hover::after {
+    transform: translateY(0);
+}
+
+.btn__reset{
+    background-color: var(--Desaturated_dark_blue_key_background);
+    box-shadow: 0px 5px 5px var(--Desaturated_dark_blue_key_shadow);
+    color: var(--White);
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+    margin-top: 3%;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--spartan);
+    font-size: 1.8rem;
+    cursor: pointer;
+    overflow: hidden;
+    animation: slideFromBottom 0.7s ease-in; 
+}
+
+.btn__reset:hover::after {
+    transform: translateY(0);
+}
+
+
+.btn__equal{
+    color: var(--White);
+    background-color: var(--Red_key_background_toggle);
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 1;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px var(--Dark_red_key_shadow);
+    border: none;
+    font-family: var(--spartan);
+    font-size: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    animation: slideFromBottom 0.7s ease-in; 
+}
+
+.btn__equal:hover::after {
+    transform: translateY(0);
+}
+
+@media (max-width: 725px)
+{
+    .center__container{
+        width: 60%;
+    }
+    .radio__theme__selector{
+        gap: 18%;
+    }
+    .nums__theme{
+        text-align: center;
+        word-spacing: 5px;
+        width: 100%;
+        font-size: 2vw;
+    }
+    .toggle__switch{
+        width: 100%;
+        height: 30%;
+    }
+    .numbers__text__display{
+        font-size: 2rem;
+    }
+}
+

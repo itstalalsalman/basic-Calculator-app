@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main__container">
+
+    <div class="center__container">
+ 
+      <div class="head__theme__select__tab">
+        <h6 class="calc__head">calc</h6>
+        <div class="radio__group__select">
+          <p class="theme__text">THEME</p>
+          <div class="radio__theme__selector">
+            <p class="nums__theme">1 2 3</p>
+            <div class="toggle__switch">
+              <div class="ball"></div>
+
+            </div>
+        </div>
+      </div>
+
+      </div>
+ 
+      <div class="screen__display">
+        <h1 class="numbers__text__display"></h1>
+      </div>
+
+      <div class="button__grid__container">
+        <button class="btn__numbers" value="7">7</button>
+        <button class="btn__numbers" value="8">8</button>
+        <button class="btn__numbers" value="9">9</button>
+        <button class="delete__btn" value="DEL">DEL</button>
+        <button class="btn__numbers" value="4">4</button>
+        <button class="btn__numbers" value="5">5</button>
+        <button class="btn__numbers" value="6">6</button>
+        <button class="operation__btn" value="+">+</button>
+        <button class="btn__numbers" value="1">1</button>
+        <button class="btn__numbers" value="2">2</button>
+        <button class="btn__numbers" value="3">3</button>
+        <button class="operation__btn" value="-">-</button>
+        <button class="btn__numbers" value=".">.</button>
+        <button class="btn__numbers" value="0">0</button>
+        <button class="operation__btn" value="/">/</button>
+        <button class="operation__btn" value="*">x</button>
+        <button class="btn__reset">RESET</button>
+        <button class="btn__equal">=</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/talal-salman-zafeer-175aab248/">Talal Salman Zafeer</a>.
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
