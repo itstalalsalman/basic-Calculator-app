@@ -51,4 +51,4 @@ I was able to:
 ## Author
 
 - Frontend Mentor - [@itstalalsalman](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn : [](https://www.linkedin.com/in/talal-salman-zafeer-175aab248/)
+- LinkedIn : [talalsalmanzafeer](https://www.linkedin.com/in/talal-salman-zafeer-175aab248/)
